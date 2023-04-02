@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+
+    <title>Frontend Mentor | Launch countdown timer</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Text:wght@700&display=swap" rel="stylesheet" />
+
+    <link rel="stylesheet" href="./output.css" />
+  </head>
+  <body class="flex-col-center min-h-screen bg-gradient-to-t from-[#291a2c] to-[#1e1e28] p-4 font-red-hat-text uppercase">
+    <!-- ------------------ background ------------------ -->
+    <div class="fixed left-0 top-0 -z-20 h-full w-full bg-bg-stars bg-contain bg-left-top bg-repeat-y"></div>
+    <div class="fixed left-0 top-0 -z-10 h-full w-full bg-pattern-hills bg-right-bottom bg-no-repeat lg:bg-contain"></div>
+
+    <h2 class="mb-20 text-center text-2xl tracking-[0.4em] text-white">We're launching soon</h2>
+
+    <!-- ------------------ timer ------------------ -->
+    <div class="flex-row-center mb-60 flex w-full gap-3 space-x-1 md:gap-8">
+      <!-- ------- days counter ------- -->
+      <div class="flex-col-center w-1/5 max-w-[10.5rem]">
+        <div class="flex-col-center relative mx-4 my-7 flex aspect-[10/9] w-full overflow-hidden rounded-lg text-soft-red shadow-[0px_0.5rem_0px_0px_#191A24]">
+          <div class="days-top flex-row-center absolute top-0 z-10 flex h-1/2 w-full origin-bottom overflow-hidden rounded-lg border border-b-0 border-mostly-black-blue bg-dark-desaturated-blue brightness-[0.8] duration-500 ease-in">
+            <div class="mt-[45%] text-[9vw] md:text-[5.5rem]"></div>
+          </div>
+          <div class="days-bot flex-row-center absolute bottom-0 z-10 flex h-1/2 w-full origin-top overflow-hidden rounded-lg border border-t-0 border-mostly-black-blue bg-dark-desaturated-blue duration-500 ease-out">
+            <div class="-mt-[45%] text-[9vw] md:text-[5.5rem]"></div>
+          </div>
+
+          <div class="days-top flex-row-center absolute top-0 z-10 flex h-1/2 w-full origin-bottom overflow-hidden rounded-lg border border-b-0 border-mostly-black-blue bg-dark-desaturated-blue brightness-[0.8] duration-500 ease-in">
+            <div class="mt-[45%] text-[9vw] md:text-[5.5rem]"></div>
+          </div>
+          <div class="days-bot flex-row-center absolute bottom-0 z-10 flex h-1/2 w-full origin-top overflow-hidden rounded-lg border border-t-0 border-mostly-black-blue bg-dark-desaturated-blue duration-500 ease-out">
+            <div class="-mt-[45%] text-[9vw] md:text-[5.5rem]"></div>
+          </div>
+
+          <div class="absolute -left-[5%] z-10 h-[10%] w-[10%] rounded-full bg-mostly-black-blue"></div>
+          <div class="absolute -right-[5%] z-10 h-[10%] w-[10%] rounded-full bg-mostly-black-blue"></div>
+        </div>
+
+        <h4 class="text-center text-[2vw] tracking-[0.4em] text-grayish-blue md:text-base">Days</h4>
+      </div>
+
+      <!-- ------- hours counter ------- -->
+      <div class="flex-col-center w-1/5 max-w-[10.5rem]">
+        <div class="flex-col-center relative mx-4 my-7 flex aspect-[10/9] w-full overflow-hidden rounded-lg text-soft-red shadow-[0px_0.5rem_0px_0px_#191A24]">
+          <div class="hours-top flex-row-center absolute top-0 z-10 flex h-1/2 w-full origin-bottom overflow-hidden rounded-lg border border-b-0 border-mostly-black-blue bg-dark-desaturated-blue brightness-[0.8] duration-500 ease-in">
+            <div class="mt-[45%] text-[9vw] md:text-[5.5rem]"></div>
+          </div>
+          <div class="hours-bot flex-row-center absolute bottom-0 z-10 flex h-1/2 w-full origin-top overflow-hidden rounded-lg border border-t-0 border-mostly-black-blue bg-dark-desaturated-blue duration-500 ease-out">
+            <div class="-mt-[45%] text-[9vw] md:text-[5.5rem]"></div>
+          </div>
+
+          <div class="hours-top flex-row-center absolute top-0 z-10 flex h-1/2 w-full origin-bottom overflow-hidden rounded-lg border border-b-0 border-mostly-black-blue bg-dark-desaturated-blue brightness-[0.8] duration-500 ease-in">
+            <div class="mt-[45%] text-[9vw] md:text-[5.5rem]"></div>
+          </div>
+          <div class="hours-bot flex-row-center absolute bottom-0 z-10 flex h-1/2 w-full origin-top overflow-hidden rounded-lg border border-t-0 border-mostly-black-blue bg-dark-desaturated-blue duration-500 ease-out">
+            <div class="-mt-[45%] text-[9vw] md:text-[5.5rem]"></div>
+          </div>
+
+          <div class="absolute -left-[5%] z-10 h-[10%] w-[10%] rounded-full bg-mostly-black-blue"></div>
+          <div class="absolute -right-[5%] z-10 h-[10%] w-[10%] rounded-full bg-mostly-black-blue"></div>
+        </div>
+
+        <h4 class="text-center text-[2vw] tracking-[0.4em] text-grayish-blue md:text-base">Hours</h4>
+      </div>
+
+      <!-- ------- minutes counter ------- -->
+      <div class="flex-col-center w-1/5 max-w-[10.5rem]">
+        <div class="flex-col-center relative mx-4 my-7 flex aspect-[10/9] w-full overflow-hidden rounded-lg text-soft-red shadow-[0px_0.5rem_0px_0px_#191A24]">
+          <div class="minutes-top flex-row-center absolute top-0 z-10 flex h-1/2 w-full origin-bottom overflow-hidden rounded-lg border border-b-0 border-mostly-black-blue bg-dark-desaturated-blue brightness-[0.8] duration-500 ease-in">
+            <div class="mt-[45%] text-[9vw] md:text-[5.5rem]"></div>
+          </div>
+          <div class="minutes-bot flex-row-center absolute bottom-0 z-10 flex h-1/2 w-full origin-top overflow-hidden rounded-lg border border-t-0 border-mostly-black-blue bg-dark-desaturated-blue duration-500 ease-out">
+            <div class="-mt-[45%] text-[9vw] md:text-[5.5rem]"></div>
+          </div>
+
+          <div class="minutes-top flex-row-center absolute top-0 z-10 flex h-1/2 w-full origin-bottom overflow-hidden rounded-lg border border-b-0 border-mostly-black-blue bg-dark-desaturated-blue brightness-[0.8] duration-500 ease-in">
+            <div class="mt-[45%] text-[9vw] md:text-[5.5rem]"></div>
+          </div>
+          <div class="minutes-bot flex-row-center absolute bottom-0 z-10 flex h-1/2 w-full origin-top overflow-hidden rounded-lg border border-t-0 border-mostly-black-blue bg-dark-desaturated-blue duration-500 ease-out">
+            <div class="-mt-[45%] text-[9vw] md:text-[5.5rem]"></div>
+          </div>
+
+          <div class="absolute -left-[5%] z-10 h-[10%] w-[10%] rounded-full bg-mostly-black-blue"></div>
+          <div class="absolute -right-[5%] z-10 h-[10%] w-[10%] rounded-full bg-mostly-black-blue"></div>
+        </div>
+
+        <h4 class="text-center text-[2vw] tracking-[0.4em] text-grayish-blue md:text-base">Minutes</h4>
+      </div>
+
+      <!-- ------- seconds counter ------- -->
+      <div class="flex-col-center w-1/5 max-w-[10.5rem]">
+        <div class="flex-col-center relative mx-4 my-7 flex aspect-[10/9] w-full overflow-hidden rounded-lg text-soft-red shadow-[0px_0.5rem_0px_0px_#191A24]">
+          <div class="seconds-top flex-row-center absolute top-0 z-10 flex h-1/2 w-full origin-bottom overflow-hidden rounded-lg border border-b-0 border-mostly-black-blue bg-dark-desaturated-blue brightness-[0.8] duration-500 ease-in">
+            <div class="mt-[45%] text-[9vw] md:text-[5.5rem]"></div>
+          </div>
+          <div class="seconds-bot flex-row-center absolute bottom-0 z-10 flex h-1/2 w-full origin-top overflow-hidden rounded-lg border border-t-0 border-mostly-black-blue bg-dark-desaturated-blue duration-500 ease-out">
+            <div class="-mt-[45%] text-[9vw] md:text-[5.5rem]"></div>
+          </div>
+
+          <div class="seconds-top flex-row-center absolute top-0 z-10 flex h-1/2 w-full origin-bottom overflow-hidden rounded-lg border border-b-0 border-mostly-black-blue bg-dark-desaturated-blue brightness-[0.8] duration-500 ease-in">
+            <div class="mt-[45%] text-[9vw] md:text-[5.5rem]"></div>
+          </div>
+          <div class="seconds-bot flex-row-center absolute bottom-0 z-10 flex h-1/2 w-full origin-top overflow-hidden rounded-lg border border-t-0 border-mostly-black-blue bg-dark-desaturated-blue duration-500 ease-out">
+            <div class="-mt-[45%] text-[9vw] md:text-[5.5rem]"></div>
+          </div>
+
+          <div class="absolute -left-[5%] z-10 h-[10%] w-[10%] rounded-full bg-mostly-black-blue"></div>
+          <div class="absolute -right-[5%] z-10 h-[10%] w-[10%] rounded-full bg-mostly-black-blue"></div>
+        </div>
+
+        <h4 class="text-center text-[2vw] tracking-[0.4em] text-grayish-blue md:text-base">Seconds</h4>
+      </div>
+    </div>
+
+    <!-- ------------------ social media ------------------ -->
+    <div class="flex-row-center fixed bottom-16 mt-8 flex">
+      <a href="#" class="m-4">
+        <!-- Generated by IcoMoon.io -->
+        <svg class="h-8 w-8 fill-grayish-blue hover:fill-soft-red" version="1.1" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+          <title>facebook2</title>
+          <path d="M29 0h-26c-1.65 0-3 1.35-3 3v26c0 1.65 1.35 3 3 3h13v-14h-4v-4h4v-2c0-3.306 2.694-6 6-6h4v4h-4c-1.1 0-2 0.9-2 2v2h6l-1 4h-5v14h9c1.65 0 3-1.35 3-3v-26c0-1.65-1.35-3-3-3z"></path>
+        </svg>
+      </a>
+
+      <a href="#" class="m-4">
+        <!-- Generated by IcoMoon.io -->
+        <svg class="h-8 w-8 fill-grayish-blue hover:fill-soft-red" version="1.1" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+          <title>pinterest</title>
+          <path
+            d="M16 2.138c-7.656 0-13.863 6.206-13.863 13.863 0 5.875 3.656 10.887 8.813 12.906-0.119-1.094-0.231-2.781 0.050-3.975 0.25-1.081 1.625-6.887 1.625-6.887s-0.412-0.831-0.412-2.056c0-1.925 1.119-3.369 2.506-3.369 1.181 0 1.756 0.887 1.756 1.95 0 1.188-0.756 2.969-1.15 4.613-0.331 1.381 0.688 2.506 2.050 2.506 2.462 0 4.356-2.6 4.356-6.35 0-3.319-2.387-5.638-5.787-5.638-3.944 0-6.256 2.956-6.256 6.019 0 1.194 0.456 2.469 1.031 3.163 0.113 0.137 0.131 0.256 0.094 0.4-0.106 0.438-0.338 1.381-0.387 1.575-0.063 0.256-0.2 0.306-0.463 0.188-1.731-0.806-2.813-3.337-2.813-5.369 0-4.375 3.175-8.387 9.156-8.387 4.806 0 8.544 3.425 8.544 8.006 0 4.775-3.012 8.625-7.194 8.625-1.406 0-2.725-0.731-3.175-1.594 0 0-0.694 2.644-0.863 3.294-0.313 1.206-1.156 2.712-1.725 3.631 1.3 0.4 2.675 0.619 4.106 0.619 7.656 0 13.863-6.206 13.863-13.863 0-7.662-6.206-13.869-13.863-13.869z"></path>
+        </svg>
+      </a>
+
+      <a href="#" class="m-4">
+        <!-- Generated by IcoMoon.io -->
+        <svg class="h-8 w-8 fill-grayish-blue hover:fill-soft-red" version="1.1" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+          <title>instagram</title>
+          <path
+            d="M16 2.881c4.275 0 4.781 0.019 6.462 0.094 1.563 0.069 2.406 0.331 2.969 0.55 0.744 0.288 1.281 0.638 1.837 1.194 0.563 0.563 0.906 1.094 1.2 1.838 0.219 0.563 0.481 1.412 0.55 2.969 0.075 1.688 0.094 2.194 0.094 6.463s-0.019 4.781-0.094 6.463c-0.069 1.563-0.331 2.406-0.55 2.969-0.288 0.744-0.637 1.281-1.194 1.837-0.563 0.563-1.094 0.906-1.837 1.2-0.563 0.219-1.413 0.481-2.969 0.55-1.688 0.075-2.194 0.094-6.463 0.094s-4.781-0.019-6.463-0.094c-1.563-0.069-2.406-0.331-2.969-0.55-0.744-0.288-1.281-0.637-1.838-1.194-0.563-0.563-0.906-1.094-1.2-1.837-0.219-0.563-0.481-1.413-0.55-2.969-0.075-1.688-0.094-2.194-0.094-6.463s0.019-4.781 0.094-6.463c0.069-1.563 0.331-2.406 0.55-2.969 0.288-0.744 0.638-1.281 1.194-1.838 0.563-0.563 1.094-0.906 1.838-1.2 0.563-0.219 1.412-0.481 2.969-0.55 1.681-0.075 2.188-0.094 6.463-0.094zM16 0c-4.344 0-4.887 0.019-6.594 0.094-1.7 0.075-2.869 0.35-3.881 0.744-1.056 0.412-1.95 0.956-2.837 1.85-0.894 0.888-1.438 1.781-1.85 2.831-0.394 1.019-0.669 2.181-0.744 3.881-0.075 1.713-0.094 2.256-0.094 6.6s0.019 4.887 0.094 6.594c0.075 1.7 0.35 2.869 0.744 3.881 0.413 1.056 0.956 1.95 1.85 2.837 0.887 0.887 1.781 1.438 2.831 1.844 1.019 0.394 2.181 0.669 3.881 0.744 1.706 0.075 2.25 0.094 6.594 0.094s4.888-0.019 6.594-0.094c1.7-0.075 2.869-0.35 3.881-0.744 1.050-0.406 1.944-0.956 2.831-1.844s1.438-1.781 1.844-2.831c0.394-1.019 0.669-2.181 0.744-3.881 0.075-1.706 0.094-2.25 0.094-6.594s-0.019-4.887-0.094-6.594c-0.075-1.7-0.35-2.869-0.744-3.881-0.394-1.063-0.938-1.956-1.831-2.844-0.887-0.887-1.781-1.438-2.831-1.844-1.019-0.394-2.181-0.669-3.881-0.744-1.712-0.081-2.256-0.1-6.6-0.1v0z"></path>
+          <path
+            d="M16 7.781c-4.537 0-8.219 3.681-8.219 8.219s3.681 8.219 8.219 8.219 8.219-3.681 8.219-8.219c0-4.537-3.681-8.219-8.219-8.219zM16 21.331c-2.944 0-5.331-2.387-5.331-5.331s2.387-5.331 5.331-5.331c2.944 0 5.331 2.387 5.331 5.331s-2.387 5.331-5.331 5.331z"></path>
+          <path d="M26.462 7.456c0 1.060-0.859 1.919-1.919 1.919s-1.919-0.859-1.919-1.919c0-1.060 0.859-1.919 1.919-1.919s1.919 0.859 1.919 1.919z"></path>
+        </svg>
+      </a>
+    </div>
+
+    <div class="fixed bottom-0 p-1 text-center text-white">
+      <span class="whitespace-nowrap">Challenge by <a class="text-grayish-blue hover:text-soft-red" href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.</span>
+      <span class="whitespace-nowrap">Coded by <a class="text-grayish-blue hover:text-soft-red" href="https://github.com/Pasek108">Artur Pas</a>.</span>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
