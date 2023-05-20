@@ -27,8 +27,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [https://github.com/Pasek108/LaunchCountdownTimer/](https://github.com/Pasek108/LaunchCountdownTimer/)
-- Live Site URL: [https://pasek108.github.io/LaunchCountdownTimer/](https://pasek108.github.io/LaunchCountdownTimer/)
+- Solution URL: [https://github.com/Pasek108/FM-LaunchCountdownTimer/](https://github.com/Pasek108/FM-LaunchCountdownTimer/)
+- Live Site URL: [https://pasek108.github.io/FM-LaunchCountdownTimer/](https://pasek108.github.io/FM-LaunchCountdownTimer/)
 
 ### Built with
 
