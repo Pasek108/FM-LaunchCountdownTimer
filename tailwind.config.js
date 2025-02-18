@@ -7,8 +7,8 @@ module.exports = {
         'red-hat-text': ['"Red Hat Text"', 'sans-serif'],
       },
       backgroundImage: {
-        "bg-stars": "url('images/bg-stars.svg')",
-        "pattern-hills": "url('images/pattern-hills.svg')"
+        "bg-stars": "url('/images/bg-stars.svg')",
+        "pattern-hills": "url('/images/pattern-hills.svg')"
       },
       colors: {
         "grayish-blue": "#8486A9",

@@ -622,6 +622,10 @@ video {
   height: 100%;
 }
 
+.h-7 {
+  height: 1.75rem;
+}
+
 .min-h-screen {
   min-height: 100vh;
 }
@@ -642,6 +646,10 @@ video {
   width: 100%;
 }
 
+.w-7 {
+  width: 1.75rem;
+}
+
 .max-w-\[10\.5rem\] {
   max-width: 10.5rem;
 }
@@ -652,10 +660,6 @@ video {
 
 .origin-top {
   transform-origin: top;
-}
-
-.transform {
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
 .gap-3 {
@@ -712,7 +716,7 @@ video {
 }
 
 .bg-bg-stars {
-  background-image: url('images/bg-stars.svg');
+  background-image: url('/images/bg-stars.svg');
 }
 
 .bg-gradient-to-t {
@@ -720,7 +724,7 @@ video {
 }
 
 .bg-pattern-hills {
-  background-image: url('images/pattern-hills.svg');
+  background-image: url('/images/pattern-hills.svg');
 }
 
 .from-\[\#291a2c\] {
@@ -787,6 +791,24 @@ video {
 
 .text-\[9vw\] {
   font-size: 9vw;
+}
+
+.text-sm {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
+.text-xs {
+  font-size: 0.75rem;
+  line-height: 1rem;
+}
+
+.font-bold {
+  font-weight: 700;
+}
+
+.font-semibold {
+  font-weight: 600;
 }
 
 .uppercase {
