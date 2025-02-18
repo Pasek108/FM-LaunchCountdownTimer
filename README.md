@@ -1,7 +1,7 @@
 <h1 align="center">FM-LaunchCountdownTimer - Readme</h1>
 <p align="center">
   <strong>
-    My solution to the <a href="https://www.frontendmentor.io/challenges/multistep-form-YVAnSdqQBJ" target="_blank">Frontend Mentor "Multi-Step Form" challenge</a>
+    My solution to the <a href="https://www.frontendmentor.io/challenges/launch-countdown-timer-N0XkGfyz-" target="_blank">Frontend Mentor "Launch countdown timer" challenge</a>
   </strong>
 </p>
 <div align="center">
